@@ -1,3 +1,5 @@
-a = np.array([[1,2,3],[4,5,6]])
-# b = np.array([[5],[6]])
-# print(a+b)  
+subject = ["History", "geography" , "civics"]
+# marks = [50 , 30 ,30]
+
+# plt.bar(subject,marks)
+# plt.show()

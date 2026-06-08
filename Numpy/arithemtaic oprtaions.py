@@ -19,4 +19,4 @@ b = np.array([10,20,30])
 result1 = a[:,np.newaxis]
 result2 = a[np.newaxis: ,]
 print(result1)
-
+print(result2)
