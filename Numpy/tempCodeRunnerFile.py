@@ -1,5 +1,1 @@
-subject = ["History", "geography" , "civics"]
-# marks = [50 , 30 ,30]
-
-# plt.bar(subject,marks)
-# plt.show()
+[1,2],[3,4],[5,6]
