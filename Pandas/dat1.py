@@ -64,11 +64,13 @@ import numpy as np
 
 # data = {'Name': ['ALice','bob','charlie','delta'],
 #         'age' : [12,12,34,56],
-#         'city' : ['delhi', 'mumbai', 'agra','pune']
-#         }
+#          'city' : ['delhi', 'mumbai', 'agra','pune']
+#          }
 
 # df = pd.DataFrame(data,index= ['A','B','C','D'])
-
+# filtered = df.loc[(df['age'] > 10) & (df['city'] == 'delhi')]
+# print(filtered)
+# print(df)
 
 
 # #loc functions
@@ -82,19 +84,21 @@ import numpy as np
 
 #GroupBy
 
-x=pd.DataFrame({'Department':['Sales','Sales','IT','IT','Marketing','Marketing'],
-                "Employee":['A','B','C','D','E','F'], 
-                'Salary':[1000,2000,5000,5000,3000,3000]})
+# x=pd.DataFrame({'Department':['Sales','Sales','IT','IT','Marketing','Marketing'],
+#                 "Employee":['A','B','C','D','E','F'], 
+#                 'Salary':[1000,2000,5000,5000,3000,3000]})
 
 # Salary_sum = x.groupby('Department')['Salary'].sum()
 # print(Salary_sum)
 
-year = pd.Series([2021,2022,2023,2024,2025,2026])
-y = pd.DataFrame({'Year':year})
-x= pd.concat([x,y],axis = 1)
+# year = pd.Series([2021,2022,2023,2024,2025,2026])
+# y = pd.DataFrame({'Year':year})
+# x= pd.concat([x,y],axis = 1)
 
-min = x.groupby(["Department"])["Salary"].agg(['max','min'])
-print(min)
+# min = x.groupby(["Department"])["Salary"].agg(['max','min'])
+# print(min)
 
-min['diff'] = min['max'] - min['min']
-print(min)
+# min['diff'] = min['max'] - min['min']
+# print(min)
+
+
