@@ -1,1 +1,1 @@
-New file content inserted
+obj.fun()

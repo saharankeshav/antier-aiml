@@ -48,27 +48,99 @@
 
 
 
-class BankAccount:
-    def __init__(self):
-        self.balance = 1000        # one shared variable for all functions
+# class BankAccount:
+#     def __init__(self):
+#         self.balance = 1000        # one shared variable for all functions
 
-    def deposit(self, amount):
-        self.balance = self.balance + amount
-        print("Deposited:", amount, "| Current Balance:", self.balance)
+#     def deposit(self, amount):
+#         self.balance = self.balance + amount
+#         print("Deposited:", amount, "| Current Balance:", self.balance)
 
-    def withdraw(self, amount):
-            self.balance = self.balance - amount
-            print("Withdrawn:", amount, "| Remaining Balance:", self.balance)
+#     def withdraw(self, amount):
+#             self.balance = self.balance - amount
+#             print("Withdrawn:", amount, "| Remaining Balance:", self.balance)
 
-    def show_balance(self):
-        print("Account Balance:", self.balance)
-
-
-obj = BankAccount()
-obj.deposit(1000)
-obj.withdraw(500)
-obj.show_balance()
+#     def show_balance(self):
+#         print("Account Balance:", self.balance)
 
 
+# obj = BankAccount()
+# obj.deposit(1000)
+# obj.withdraw(500)
+# obj.show_balance()
+
+
+# class A:
+#     def __init__(self):
+#         print("hello")
+
+#     def __init__(self):
+#         print("byr")
+
+
+# obj = A()
+
+        
+
+# class A:
+#     def __init__(self,a,b):
+#         self.a = a
+#         self.b = b
+
+
+
+#inhereience is a concept in oops where one class acquire the property and method of another class
+
+#hybrid inhedrirtejce
+
+# class A:
+#     def fun(self,name):
+#         print("A")
+
+# class B(A):
+#     def sun(self, age):
+#         print("B")
+
+# class C(A):
+#     def run(self,city):
+#         print("C")
+
+# class D(B,C):
+#     def tun(self,marks):
+#         print("E")
+
+# obj = A()
+# obj = B()
+# obj = C()
+# obj = D()
+
+
+#method overriding
+
+# class A:
+#     def fun(self):
+#         print("hello")
+
+# class B(A):
+#     def fun(self):
+#         super().fun()
+#         print("bye")
+
+# obj = B()
+# obj.fun()
+
+#constructor inheritancd
+
+# class person:
+#     def __init__(self,name):
+#         self.name = name
+
+# class student(person):
+#     def fun(self):
+#         print(self.name)
+
+
+# obj = student("Rahul")
+# obj.fun()
 
 
