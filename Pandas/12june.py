@@ -48,3 +48,25 @@ df = pd.DataFrame(data)
 
 #nlargest
 # print(df.nlargest(3,"Salary"))
+
+# ----------------------------------------------
+# 17june
+
+
+# #row with maximum salary
+# row_max = df.loc[df["Salary"].idxmax()]
+# #row with minimum salary
+# row_min = df.loc[df["Salary"].idxmin()]
+
+# print(row_max)
+# print(row_min)
+
+
+
+# csv file
+
+df.to_csv("employee_data.csv", index = False)
+
+print("File created")
+
+
