@@ -49,6 +49,6 @@ result4 = pd.pivot_table(
     fill_value = 0,
 margins=True
 )
-print(result4)
+print(result3)
 
 

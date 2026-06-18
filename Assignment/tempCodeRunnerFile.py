@@ -1,2 +1,1 @@
-print(df.loc['Score'])
-    # print(df.iloc[3])
+"mean","max","min","count"
