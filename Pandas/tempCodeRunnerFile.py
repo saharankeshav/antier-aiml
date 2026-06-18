@@ -1,1 +1,1 @@
-mean
+print(df)

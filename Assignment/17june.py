@@ -226,4 +226,129 @@ import pandas as pd
 #     aggfunc=["mean","max","min"]
 # ))
 
+# df_emp = pd.DataFrame({
+#     'EmployeeID': [1,2,3,4],
+#     'EmployeeName': ['A','B','C','D']
+# })
 
+# df_dept = pd.DataFrame({
+#     'EmployeeID': [1,2,3,4],
+#     'Department': ['HR','IT','Finance','IT']
+# })
+# # Merge both DataFrames to get complete employee information.
+
+# result = pd.merge(df_emp,df_dept,on="EmployeeID",how="left")
+# print(result)
+
+# df_student = pd.DataFrame({
+#     'StudentID': [1,2,3,4],
+#     'StudentName': ['Aman','Priya','Rahul','Sneha']
+# })
+
+# df_marks = pd.DataFrame({
+#     'StudentID': [1,2,3,4],
+#     'Marks': [85, 90, 78, 88]
+# })
+# # Merge them using StudentID.
+# print(pd.merge(df_student,df_marks,on="StudentID",how="inner"))
+
+# df_customer = pd.DataFrame({
+#     'CustomerID': [1,2,3,4],
+#     'CustomerName': ['Ravi','Neha','Aman','Pooja']
+# })
+
+# df_orders = pd.DataFrame({
+#     'CustomerID': [1,2,2,3],
+#     'OrderID': [101,102,103,104]
+# })
+
+# print(pd.merge(df_customer,df_orders,on="CustomerID",how="left"))
+
+# df_products = pd.DataFrame({
+#     'ProductID': [1,2,3,4],
+#     'ProductName': ['Pen','Pencil','Notebook','Eraser']
+# })
+
+# df_prices = pd.DataFrame({
+#     'ProductID': [1,2,3,4],
+#     'Price': [10, 5, 40, 3]
+# })
+# # Merge them to create a complete product catalog.
+# print(pd.merge(df_products,df_prices,on="ProductID",how="outer"))
+
+# df_patient = pd.DataFrame({
+#     'PatientID': [1,2,3,4],
+#     'PatientName': ['Ravi','Neha','Aman','Pooja']
+# })
+
+# df_diagnosis = pd.DataFrame({
+#     'PatientID': [1,2,3],
+#     'Diagnosis': ['Flu','Fracture','Diabetes']
+# })
+# # Combine both datasets.
+# print(pd.merge(df_patient,df_diagnosis,on="PatientID",how="left"))
+
+
+# df_emp2 = pd.DataFrame({
+#     'EmployeeID': [1,2,3,4],
+#     'EmployeeName': ['A','B','C','D']
+# })
+
+# df_salary = pd.DataFrame({
+#     'EmployeeID': [1,2,3,4],
+#     'Salary': [50000, 60000, 55000, 65000]
+# })
+# # Merge them using EmployeeID.
+
+# print(pd.merge(df_emp2,df_salary,on="EmployeeID",how="outer"))
+
+# df_books = pd.DataFrame({
+#     'BookID': [1,2,3,4],
+#     'BookTitle': ['Book A','Book B','Book C','Book D']
+# })
+
+# df_authors = pd.DataFrame({
+#     'BookID': [1,2,3,4],
+#     'Author': ['Author X','Author Y','Author Z','Author W']
+# })
+# # Merge them to display complete book information.
+# print(pd.merge(df_books,df_authors,on="BookID",how="outer"))
+
+
+# df_students2 = pd.DataFrame({
+#     'StudentID': [1,2,3,4],
+#     'StudentName': ['Aman','Priya','Rahul','Sneha']
+# })
+
+# df_courses = pd.DataFrame({
+#     'StudentID': [1,2,2,3],
+#     'Course': ['Math','Science','Art','English']
+# })
+# # Combine them into a single DataFrame.
+# print(pd.merge(df_students2,df_courses,on="StudentID",how="outer"))
+
+
+# df_movies = pd.DataFrame({
+#     'MovieID': [1,2,3,4],
+#     'MovieTitle': ['Movie A','Movie B','Movie C','Movie D']
+# })
+
+# df_ratings = pd.DataFrame({
+#     'MovieID': [1,2,3],
+#     'Rating': [8.5, 7.2, 9.0]
+# })
+# # Merge them to analyze movie performance.
+# print(pd.merge(df_movies,df_ratings,on="MovieID",how="left"))
+
+
+df_customers2 = pd.DataFrame({
+    'CustomerID': [1,2,3,4],
+    'CustomerName': ['Ravi','Neha','Aman','Pooja']
+})
+
+df_sales = pd.DataFrame({
+    'CustomerID': [1,2,2,3],
+    'SaleAmount': [500, 1200, 300, 800]
+})
+# Merge them to generate customer sales reports.
+print(pd.merge(df_customers2,df_sales,on="CustomerID",how="inner"))
