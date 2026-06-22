@@ -24,4 +24,10 @@ df["Product_Category_3"] = df["Product_Category_3"].fillna(0)
 le = LabelEncoder()
 df["Gender"] = le.fit_transform(df["Gender"])
 # print(df["Gender"].unique())
-print(df[["Gender"]].head())
+# print(df[["Gender"]].head())
+
+df = pd.get_dummies(df, columns=["City_Category"])
+# print(df.columns)
+
+# print(df[["City_Category_A", "City_Category_B", "City_Category_C"]].head())
+
