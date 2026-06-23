@@ -41,6 +41,26 @@
 #       Examples:
 #       - Linear Regression      : Predicts a value using a straight line relationship.
 #                                  e.g., Predicting house price based on size.
+#
+#         Equation : y = mx + c
+#
+#         Formula for Slope (m):
+#                   Σ (xᵢ - x̄)(yᵢ - ȳ)
+#           m  =   ─────────────────────
+#                      Σ (xᵢ - x̄)²
+#
+#         Formula for Intercept (c):
+#           c  =  ȳ - m * x̄
+#
+#         Where:
+#           xᵢ = each x value         yᵢ = each y value
+#           x̄  = mean of all x        ȳ  = mean of all y
+#           Σ  = sum over all points
+#
+#         What they mean:
+#           m → how much y changes for every 1 unit increase in x (steepness)
+#           c → where the line crosses the y-axis (when x = 0)
+#
 #       - Polynomial Regression  : Fits a curve instead of a straight line.
 #                                  e.g., Predicting growth rate over time.
 #       - Ridge / Lasso Regression: Linear regression with regularization to reduce overfitting.
